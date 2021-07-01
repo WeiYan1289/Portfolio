@@ -32,10 +32,10 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    color: gray;
+    color: #686868;
 
     :hover {
-      color: #C5976B;
+      color: black;
     }
   }
 }

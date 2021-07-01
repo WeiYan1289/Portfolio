@@ -1,5 +1,5 @@
 <template>
-  <div class="home"></div>
+  <div class="home">hello</div>
 </template>
 
 <script>
@@ -9,3 +9,9 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+    margin-left: 100px;
+}
+</style>

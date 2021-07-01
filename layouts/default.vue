@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- header -->
-    <sideNav />
-    <topNav />
+    <SideNav />
+    <TopNav />
     <Nuxt />
     <!-- footer -->
   </div>
