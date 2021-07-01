@@ -28,8 +28,8 @@
             <nuxt-link class="nuxt" to="/projects">
                 <div class="link" :class="{ 'link-active': isProjects }">
                     projects
-                    <v-icon v-if="isProject">mdi-puzzle</v-icon>
-                    <v-icon v-if="isProject">mdi-clipboard-text-search</v-icon>
+                    <v-icon v-if="isProjects">mdi-puzzle</v-icon>
+                    <v-icon v-if="isProjects">mdi-clipboard-text-search</v-icon>
                 </div>
             </nuxt-link>
             </div>
