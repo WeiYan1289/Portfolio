@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-layout">
     <!-- header -->
     <SideNavigation />
     <TopNavigation />
@@ -11,3 +11,11 @@
 <script>
 export default {};
 </script>
+
+<style lang="scss" scoped>
+.my-layout {
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+}
+</style>
