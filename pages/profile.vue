@@ -92,4 +92,22 @@ export default {
 .intro {
   margin: 0 5%;
 }
+
+@media screen and (max-width: 1366px) {
+  .profile {
+    &__container {
+      width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profile {
+    margin-left: 100px;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 </style>
