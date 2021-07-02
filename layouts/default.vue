@@ -17,5 +17,6 @@ export default {};
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
+  position: relative;
 }
 </style>
