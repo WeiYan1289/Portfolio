@@ -20,23 +20,38 @@
 
 <style lang="scss" scoped>
 .side-nav {
-  width: 80px;
   position: fixed;
   left: 0;
-  top: 0;
   bottom: 0;
-  padding-top: 214px;
 
   .icon {
-    margin: 0 0 21px;
-    display: block;
     text-align: center;
     text-decoration: none;
     color: #686868;
-
-    :hover {
-      color: black;
-    }
+    margin: 0 0 21px;
+    display: block;
   }
+
+  :hover {
+    color: black;
+  }
+}
+@media screen and (min-width: 1000px) {
+    .side-nav {
+        width: 80px;
+        top: 0;
+        padding-top: 264px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+ .side-nav { 
+    width: 100%;
+    background-color: white;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px 15%;
+ }
 }
 </style>

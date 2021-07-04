@@ -1,9 +1,11 @@
 <template>
   <div class="my-layout">
     <!-- header -->
-    <SideNavigation />
     <TopNavigation />
-    <Nuxt />
+    <div class="my-content">
+      <Nuxt />
+    </div>
+    <SideNavigation />
     <!-- footer -->
   </div>
 </template>
@@ -12,7 +14,15 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
+<style>
+html {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.my-content {
+  margin-bottom: 60px;
+}
+
 .my-layout {
   overflow: hidden;
   min-height: 100vh;

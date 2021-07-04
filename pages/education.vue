@@ -8,7 +8,7 @@
         result="CGPA 3.3759"
         :imgSrc="require('~/assets/images/UTAR.jpg')"
     />
-
+    
     <School 
         name="Pei Hwa High School"
         year="2012-2017"

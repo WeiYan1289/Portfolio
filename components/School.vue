@@ -12,6 +12,14 @@
           <div class="emph"></div>
       </div>
       
+      <slot>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet
+          quod nostrum dolore ipsam blanditiis repellendus cum maiores facilis,
+          laudantium accusantium quasi perferendis. Facilis minima eligendi
+          cupiditate ipsum similique commodi!
+        </p>
+      </slot>
     </div>
   </div>
 </template>
@@ -24,7 +32,7 @@ export default{
     scholar: { type: String, default: '' },
     field: { type: String, default: '' },
     result: { type: String, default: '' },
-    imgSrc: { type: String, default: '' }
+    imgSrc: { type: String, default: '' },
   },
 }
 </script>
@@ -69,7 +77,7 @@ export default{
                 content: '';
                 position: absolute;
                 bottom: -6px;
-                left: 5px;
+                left: 3px;
                 right: -5px;
                 height: 5px;
                 background: brown;

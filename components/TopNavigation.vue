@@ -5,28 +5,30 @@
         <img class="logo-img" src="~/assets/images/logo.svg" alt="WY Logo" />
       </nuxt-link>
     </div>
-    <div class="burger-placeholder" @click="openSideNav"></div>
+    <div class="burger-placeholder" @click="openSideNav">
+        <v-icon x-large>mdi-backburger</v-icon>
+    </div>
     <div class="wrapper" ref="wrapper" @click="closeSideNav">
       <div class="links">
         <nuxt-link class="nuxt" to="/profile">
           <div class="link" :class="{ 'link-active': isProfile }">
-            about me
+            About Me
             <v-icon v-if="isProfile">mdi-folder-account</v-icon>
-            <v-icon v-if="isProfile">mdi-card-account-details</v-icon>
+            <v-icon class="deco-btn" v-if="isProfile">mdi-card-account-details</v-icon>
           </div>
         </nuxt-link>
         <nuxt-link class="nuxt" to="/education">
           <div class="link" :class="{ 'link-active': isEducation }">
-            educations
+            Educations
             <v-icon v-if="isEducation">mdi-school</v-icon>
-            <v-icon v-if="isEducation">mdi-book-open-page-variant</v-icon>
+            <v-icon class="deco-btn" v-if="isEducation">mdi-book-open-page-variant</v-icon>
           </div>
         </nuxt-link>
         <nuxt-link class="nuxt" to="/projects">
           <div class="link" :class="{ 'link-active': isProjects }">
-            projects
-            <v-icon v-if="isProjects">mdi-puzzle</v-icon>
-            <v-icon v-if="isProjects">mdi-clipboard-text-search</v-icon>
+            Projects
+             <v-icon v-if="isProjects">mdi-clipboard-text-search</v-icon>
+            <v-icon class="deco-btn" v-if="isProjects">mdi-puzzle</v-icon>
           </div>
         </nuxt-link>
       </div>
@@ -38,27 +40,15 @@
 export default {
   computed: {
     isProfile() {
-      if (this.$route.path == "/profile") {
-        return true;
-      } else {
-        return false;
-      }
+      return this.$route.path == "/profile";
     },
 
     isEducation() {
-      if (this.$route.path == "/education") {
-        return true;
-      } else {
-        return false;
-      }
+      return this.$route.path == "/education";
     },
 
     isProjects() {
-      if (this.$route.path == "/projects") {
-        return true;
-      } else {
-        return false;
-      }
+      return this.$route.path == "/projects";
     }
   },
   methods: {
@@ -77,7 +67,7 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: #eee;
+  background: #fbfaf5;
   align-items: center;
   padding: 0 80px;
 
@@ -85,18 +75,21 @@ export default {
     margin: 110px 0;
   }
 }
+.logo-img {
+  min-height: 250px;
+  max-width: 200px;
+}
 .burger-placeholder {
   display: none;
   height: 40px;
   width: 40px;
-  background: gray;
   cursor: pointer;
 }
 .links {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  font-size: 35px;
+  font-size: 32px;
 }
 .nuxt {
   text-decoration: none;
@@ -112,46 +105,43 @@ export default {
   color: black;
 }
 
-@media screen and (max-width: 1128px) {
-}
-
-@media screen and (max-width: 768px) {
-}
-
 @media screen and (max-width: 1000px) {
   .top-nav {
+    padding-left: 0;
+    padding-right: 30px;
+    
     .burger-placeholder {
       display: block;
     }
+
+    .deco-btn {
+      visibility: hidden;
+    }
+
     .wrapper {
       margin: 0;
       height: 100vh;
-      background: pink;
+      background: #EFEFEF;
       width: 200px;
       position: fixed;
       top: 0;
       right: 0;
       transition: transform 0.2s ease;
       transform: translateX(100%);
+      border-left: #eee solid 1px;
+      padding-left: 15px;
 
       .links {
         justify-content: space-around;
         height: 40vh;
         width: 100%;
         flex-direction: column;
+        font-size: 26px !important;
       }
 
       &.pulled-in {
         transform: translateX(0);
       }
-    }
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .top-nav {
-    .logo-img {
-      width: 200px;
     }
   }
 }
