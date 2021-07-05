@@ -1,14 +1,14 @@
 <template>
   <div class="profile">
-    <div class="profile__container">
-      <div class="profile__container__left">
+    <div class="profile-container">
+      <div class="profile-container-left">
         <img
           class="my-photo"
           src="~/assets/images/profile.jpg"
           alt="my avatar"
         />
       </div>
-      <div class="profile__container__right">
+      <div class="profile-container-right">
         <div class="the-title">Hello, my name Wei Yan!</div>
         <div class="para">
           <span>
@@ -59,19 +59,17 @@ export default {
 .profile {
   display: flex;
   justify-content: flex-start;
-  margin-left: 200px;
 
-  &__container {
+  .profile-container {
     display: flex;
-    width: 50vw;
 
-    &__left {
+    .profile-container-left {
       padding: 30px;
     }
 
-    &__right {
+    .profile-container-right {
       padding-top: 30px;
-      margin-left: 50px;
+
       .the-title {
         font-size: 2em;
         font-weight: 800;
@@ -89,24 +87,40 @@ export default {
   max-height: 250px;
 }
 
-.intro {
-  margin: 0 5%;
-}
-
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .profile {
-    &__container {
+    margin: 0 20%;
+
+    .profile-container {
       width: 80vw;
+    }
+
+    .profile-container-right {
+      margin-left: 50px;
     }
   }
 }
 
 @media screen and (max-width: 1000px) {
   .profile {
-    margin-left: 100px;
-    &__container {
+    margin: 0 10%;
+    
+    .profile-container {
       flex-direction: column;
       align-items: center;
+
+      .profile-container-right {
+        padding-top: 0;
+
+        .the-title {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+        .para {
+          margin-top: 20px;
+          font-size: 1.3em;
+        }
+      }
     }
   }
 }

@@ -105,7 +105,7 @@ export default {
   color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .top-nav {
     padding-left: 0;
     padding-right: 30px;
@@ -134,6 +134,7 @@ export default {
       .links {
         justify-content: space-around;
         height: 40vh;
+        max-height: 300px;
         width: 100%;
         flex-direction: column;
         font-size: 26px !important;

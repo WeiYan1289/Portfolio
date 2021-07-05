@@ -31,7 +31,6 @@ export default {
 <style lang="scss" scoped>
 .education {
     display: flex;
-    flex-direction: row;
-    margin-left: 200px;
+    flex-direction: column;
 }
 </style>
