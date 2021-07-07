@@ -12,7 +12,7 @@
         <div class="the-title">Some Information About Me...... </div>
         <div class="para">
           <p>
-            Hi, my name is Wei Yan. I'm a I am <span>Fresh Graduate Software Engineer</span> who 
+            Hi, my name is Wei Yan. I'm a <span>Fresh Graduate Software Engineer</span> who 
             seeking a full-time position in the field of IT industry, where I can 
             apply my knowledges and skills for continuous improvement.
           </p>
