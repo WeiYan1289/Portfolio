@@ -47,7 +47,7 @@
 @media screen and (max-width: 1000px) {
  .side-nav { 
     width: 100%;
-    background-color: white;
+    background: #fbfaf5;
     height: 45px;
     display: flex;
     justify-content: space-between;

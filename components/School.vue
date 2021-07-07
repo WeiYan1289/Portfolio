@@ -82,7 +82,7 @@ export default{
             }
 
             .result {
-                font-size: 1.4em;
+                font-size: 1.3em;
                 width: fit-content;
                 .emph {
                     content: '';
@@ -93,9 +93,10 @@ export default{
             }
 
             > p {
-                margin-top: 15px;
-                margin-bottom: 25px;
-                font-size: 1.45em;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                max-width: 700px;
+                font-size: 1.25em;
             }
         }
     }
@@ -113,7 +114,7 @@ export default{
 
 @media screen and (max-width: 1000px) {
   .school {
-    margin: 0 10%;
+    margin: 30px 10%;
     
     .school-container {
       flex-direction: column;
@@ -121,8 +122,8 @@ export default{
 
       .school-container-left {
         .school-img {
-            max-width: 80vw;
-            height: auto;
+            width: 80vw;
+            max-width: 700px;
             margin: 0;
             box-shadow: 0px 3px 5px 2px gray !important;;
         }
@@ -130,7 +131,6 @@ export default{
 
       .school-container-right {
         padding-top: 10px;
-        padding-bottom: 45px;
 
         .name {
             > span {
@@ -143,11 +143,11 @@ export default{
         }
 
         .result {
-            font-size: 1.2em;
+            font-size: 1.15em;
         }
 
         > p {
-          font-size: 1.25em;
+          font-size: 1.1em;
         }
       }
     }

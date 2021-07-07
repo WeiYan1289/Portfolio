@@ -68,6 +68,7 @@ export default {
     }
 
     .profile-container-right {
+      max-width:700px;
       padding-top: 30px;
 
       .the-title {

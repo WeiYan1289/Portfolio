@@ -2,7 +2,7 @@
   <div class="top-nav">
     <div class="logo">
       <nuxt-link class="nuxt" to="/">
-        <img class="logo-img" src="~/assets/images/logo.svg" alt="WY Logo" />
+        <img class="logo-img" src="~/assets/images/logo.png" alt="WY Logo" />
       </nuxt-link>
     </div>
     <div class="burger-placeholder" @click="openSideNav">
@@ -76,7 +76,6 @@ export default {
   }
 }
 .logo-img {
-  min-height: 250px;
   max-width: 200px;
 }
 .burger-placeholder {
@@ -107,7 +106,7 @@ export default {
 
 @media screen and (max-width: 1150px) {
   .top-nav {
-    padding-left: 0;
+    padding-left: 10px;
     padding-right: 30px;
     
     .burger-placeholder {
