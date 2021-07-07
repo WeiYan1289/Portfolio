@@ -108,6 +108,10 @@ export default{
 
     .school-container {
       width: 80vw;
+
+      .school-container-right {
+        margin-left: 30px;
+      }
     }
   }
 }

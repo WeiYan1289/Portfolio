@@ -61,6 +61,7 @@ export default{
             .title {
                 font-size: 1.6em;
                 font-weight: bold;
+                max-width: 400px;
             }
 
             .subtitle {
@@ -94,7 +95,7 @@ export default{
             .tech-title {
                 font-size: 1.3em;
                 font-weight: bold;
-                padding: 20px 0;
+                padding: 10px 0;
             }
             .technology {
                 display: flex;
@@ -133,7 +134,7 @@ export default{
       width: 80vw;
 
       .project-container-right {
-          margin: 100px 0 50px 0;
+          margin: 100px 0 50px 30px;
 
           .technology {
               .item {
