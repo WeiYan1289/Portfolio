@@ -1,20 +1,5 @@
-# weiyan-portfolio
+# Wei Yan's Portfolio
+This is my personal portfolio website built by using Nuxt.js
 
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Important Notes
+The data in this website are hardcored. More data and features will be added in the future and the UI of the website will be enhanced after gaining more experience and knowledge.
