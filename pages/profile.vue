@@ -41,8 +41,8 @@
         <div class="para">
           <p>
             For now, I am more familiar with front end development and love to
-            learn the frameworks and designs that can help me to construct
-            attractive webpage.
+            explore more about frameworks and designs that can help me to
+            construct attractive webpage.
           </p>
         </div>
       </div>
